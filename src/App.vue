@@ -1,26 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app bg-indigo-400  min-h-screen relative ">
+    <NavHeader/>
+    <!--router-view/-->
+    <div class="home">
+        <section class="hero relative h-screen">
+          <div class="hero-text container h-full flex flex-col justify-center px-28 py-20 max-w-screen-xl m-auto">
+            <h1>Hi, I am Simon!</h1>
+            <h2>
+              Short description ...
+            </h2>
+          </div>
+        </section>
+        <section class="lorem items-center">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi consequuntur odit sed laborum ipsam est veniam ex asperiores, esse unde quae commodi ut dolor. Eum eaque vero maiores quam.</p>
+        </section>
+      </div>
+    <SimpleFooter/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavHeader from './components/NavHeader.vue'
+import SimpleFooter from './components/SimpleFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavHeader,
+    SimpleFooter
   }
 }
+
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
 </style>
