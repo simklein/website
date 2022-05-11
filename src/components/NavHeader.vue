@@ -1,9 +1,8 @@
 <template>
-    <header class="bg-indigo-100 w-full z-50 fixed">
-        <nav class="flex flex-row py-12 px-0 w-11/12 m-auto">
-            <div class="logo p-3 text-amber-400 font-extrabold font">
-                <!--img class="bg-black rounded-full" alt="Vue logo" src="@/assets/logo.png"-->
-                SIMON
+    <header class="w-full bg-light z-50 fixed">
+        <nav class="flex flex-row py-12 px-0 w-11/12 m-auto text-dark">
+            <div class="logo p-3 font-extrabold font">
+                <img class="h-16 w-16" alt="DSP logo" src="@/assets/dsp_logo.png">
             </div>
             <ul v-show="!mobile" class="navigation flex items-center flex-1 justify-end font-extrabold">
                 <li class="uppercase p-3"><router-link class="link" :to="{name: ''}">Home</router-link></li>
