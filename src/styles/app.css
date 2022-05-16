@@ -11,3 +11,17 @@
     --tw-text-opacity: 1;
     color: rgb(0 48 73 / var(--tw-text-opacity));
 }
+
+.text-orange {
+    --tw-text-opacity: 1;
+    color: rgb(247 127 0 / var(--tw-text-opacity));
+}
+
+.text-red {
+    --tw-text-opacity: 1;
+    color: rgb(214 40 40 / var(--tw-text-opacity));
+ }
+
+ .decoration-myyellow {
+    text-decoration-color: #FCBF49;
+}

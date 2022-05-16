@@ -7,16 +7,18 @@
           <div class="hero-text container h-full flex flex-col justify-center text-dark text-6xl">
             <h1 class="font-bold mb-6">
               Hi, I'm
-              <span class="font-extrabold text-red-700"> Simon</span>!
+              <span class="font-extrabold text-red"> Simon</span>!
             </h1>
             <h2>
-              I &#9829; audio, data and learning new things.
+              I <font-awesome-icon class="text-5xl" :icon="['far', 'heart']"/> audio, data and learning new things.
             </h2>
           </div>
         </section>
         <section class="about items-center text-dark">
           <h2>About me</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi consequuntur odit sed laborum ipsam est veniam ex asperiores, esse unde quae commodi ut dolor. Eum eaque vero maiores quam.</p>
+          <p>This is a <span class="underline decoration-[0.20rem] motion-safe:transition-all motion-safe:duration-100
+        hover:decoration-[0.4rem] focus:decoration-[0.4rem] decoration-myyellow">link</span></p>
         </section>
       </div>
     <SimpleFooter/>
