@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    /*
+    Change to this one maybe
+    https://www.awwwards.com/inspiration/restora-old-style-serif-font
+    */
+    font-family: "Kenfolg";
+    src: local("Kenfolg"),
+     url(../assets/fonts/Kenfolg_v2.otf) format("otf");
+  }
+
+.font-title {
+    font-family: "Kenfolg";
+}
+
 .bg-light {
     --tw-bg-opacity: 1;
     background-color: rgb(234 226 183 / var(--tw-bg-opacity));
@@ -28,6 +42,15 @@
 
 .border-myyellow {
     border-color: #FCBF49;
+}
+
+.text-link {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.2rem/* 3.2px */;
+}
+
+.text-link:hover {
+    text-decoration-thickness: 0.4rem/* 3.2px */;
 }
 
 .bg-dsp {
