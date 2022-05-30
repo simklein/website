@@ -2,23 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    /*
-    Change to this one maybe
-    https://www.awwwards.com/inspiration/restora-old-style-serif-font
-    */
-    font-family: "Kenfolg";
-    src: local("Kenfolg"),
-     url(../assets/fonts/Kenfolg_v2.otf) format("otf");
-  }
-
 .font-title {
-    font-family: "Kenfolg";
+    font-family: 'Catamaran', Sans-Serif;
 }
+
+.font-text {
+    font-Family: 'Merriweather Sans', Sans-Serif;
+}
+
 
 .bg-light {
     --tw-bg-opacity: 1;
     background-color: rgb(234 226 183 / var(--tw-bg-opacity));
+}
+
+.bg-dark {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 48 73 / var(--tw-bg-opacity));
+}
+
+.bg-myyellow {
+    --tw-bg-opacity: 1;
+    background-color: rgb(252 191 73 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-myyellow *::selection {
+    --tw-bg-opacity: 1;
+    background-color: rgb(252 191 73 / var(--tw-bg-opacity));
+}
+.selection\:bg--myyellow {
+    --tw-bg-opacity: 1;
+    background-color: rgb(252 191 73 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-myyellow:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(252 191 73 / var(--tw-bg-opacity));
+}
+
+.text-light {
+    --tw-text-opacity: 1;
+    color: rgb(234 226 183 / var(--tw-text-opacity));
 }
 
 .text-dark {
@@ -36,12 +60,21 @@
     color: rgb(214 40 40 / var(--tw-text-opacity));
  }
 
+ .hover\:text-red:hover {
+    --tw-text-opacity: 1;
+    color: rgb(214 40 40 / var(--tw-text-opacity));
+}
+
 .decoration-myyellow {
     text-decoration-color: #FCBF49;
 }
 
-.border-myyellow {
-    border-color: #FCBF49;
+.border-dark {
+    border-color: #003049;
+}
+
+.border-red {
+    border-color: #D62828;
 }
 
 .text-link {
@@ -50,7 +83,7 @@
 }
 
 .text-link:hover {
-    text-decoration-thickness: 0.4rem/* 3.2px */;
+    text-decoration-thickness: 0.3rem/* 3.2px */;
 }
 
 .bg-dsp {
@@ -60,4 +93,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
+  }
+
+  .material-design-icon {
+    display: inline-flex;
+    align-self: center;
   }
