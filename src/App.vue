@@ -5,12 +5,16 @@
     <div class="content px-10 md:px-28 py-20 max-w-screen-xl m-auto">
         <section class="hero relative h-screen">
           <div class="hero-text container h-full flex flex-col justify-center text-dark selection:bg-myyellow">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-title mb-6">
-              Hi, I am Simon!
-            </h1>
-            <h2 class="font-text text-lg sm:text-xl md:text-1xl lg:text-2xl xl:text-3xl">
-              I like audio, data and learning new things.
-            </h2>
+            <AppearTransition :translation="['-100px',0]" :duration="2000">
+              <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-title mb-6">
+                Hi, I am Simon!
+              </h1>
+            </AppearTransition>
+            <AppearTransition :duration="2000" :delay="1500">
+              <h2 class="font-text text-lg sm:text-xl md:text-1xl lg:text-2xl xl:text-3xl">
+                I like audio, data and learning new things.
+              </h2>
+            </AppearTransition>
           </div>
         </section>
         <section class="about md:pr-28 text-dark font-text text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl text-justify selection:bg-myyellow">
@@ -19,7 +23,7 @@
             href="https://www.kind.com/de-de/unternehmen/" target="_blank" title="KIND">KIND Group</a>, where I evaluate signal prossesing algorithms in the context of medical devices.
           </p>
           <br>
-          <p>I also recently completed both my bachelor’s and master’s in Electrical Engineering, Information Technology, and Computer Engineering at RWTH Aachen where I spent much of my time conducting
+          <p>Last year I also completed my master’s in Electrical Engineering, Information Technology, and Computer Engineering at RWTH Aachen. where I spent much of my time conducting
             <a class="font-semibold underline decoration-[0.2rem] hover:decoration-[0.3rem] focus:decoration-[0.3rem] decoration-myyellow"
             href="https://www.akustik.rwth-aachen.de/" target="_blank" title="Institut für Hörtechnik und Akustik">research in acoustics</a>.
           </p>
@@ -43,42 +47,42 @@
               <ul class="grid grid-cols-3 items-center flex-1 justify-center">
                 <li class="tools-link p-10">
                   <a href="https://python.org" class="hover:text-red" target="_blank" title="Python">
-                      <font-awesome-icon class="bg-light rounded-md h-10 w-10" :icon="['fab', 'python']"/>
+                      <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'python']"/>
                   </a>
                 </li>
                 <li class="tools-link p-10">
                     <a href="https://git-scm.com/" class="hover:text-red" target="_blank" title="Git">
-                        <font-awesome-icon class="bg-light rounded-md h-10 w-10" :icon="['fab', 'git']"/>
+                        <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'git']"/>
                     </a>
                 </li>
                 <li class="tools-link p-10">
                   <a href="https://vuejs.org" class="hover:text-red" target="_blank" title="Vue.js">
-                      <font-awesome-icon class="bg-light rounded-md h-10 w-10" :icon="['fab', 'vuejs']"/>
+                      <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'vuejs']"/>
                   </a>
                 </li>
                 <li class="tools-link p-10">
                     <a href="https://unity.com/" class="hover:text-red" target="_blank" title="Unity">
-                        <font-awesome-icon class="bg-light rounded-md h-10 w-10" :icon="['fab', 'unity']"/>
+                        <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'unity']"/>
                     </a>
                 </li>
                 <li class="tools-link p-10">
                     <a href="https://docs.microsoft.com/de-de/dotnet/csharp/" class="hover:text-red" target="_blank" title="C#">
-                      <csharp-icon :size="40"/>
+                      <csharp-icon class="transform hover:scale-125 transition-transform" :size="40"/>
                     </a>
                 </li>
                 <li class="tools-link p-10">
                     <a href="https://www.blender.org/" class="hover:text-red" target="_blank" title="Blender">
-                        <blender-icon :size="40"/>
+                        <blender-icon class="transform hover:scale-125 transition-transform" :size="40"/>
                     </a>
                 </li>
                 <li class="tools-link p-10">
                     <a href="https://firebase.google.com/" class="hover:text-red" target="_blank" title="Firebase">
-                        <firebase-icon :size="40"/>
+                        <firebase-icon class="transform hover:scale-125 transition-transform" :size="40"/>
                     </a>
                 </li>
                 <li class="tools-link p-10">
                     <a href="https://code.visualstudio.com/" class="hover:text-red" target="_blank" title="Visual Studio Code">
-                        <vscode-icon :size="40"/>
+                        <vscode-icon class="transform hover:scale-125 transition-transform" :size="40"/>
                     </a>
                 </li>
               </ul>
@@ -112,11 +116,19 @@ export default {
   components: {
     NavHeader,
     SimpleFooter
+  },
+  data () {
+    return {
+      show: false
+    }
+  },
+  mounted () {
+    this.$nextTick(this.show = true) // might need this.$nextTick
   }
 }
 
 </script>
 
-<style lang="scss">
+<style>
 
 </style>

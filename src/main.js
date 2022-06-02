@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import AppearTransition from '@/components/AppearTransition'
 import './styles/app.css'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -14,6 +15,7 @@ import VSCodeIcon from 'vue-material-design-icons/MicrosoftVisualStudioCode.vue'
 library.add(faPhone, faLinkedin, faVuejs, faCopyright, faHeart, faGithubSquare, faGit, faUnity, faPython, faInstagramSquare)
 
 createApp(App)
+  .component('AppearTransition', AppearTransition)
   .component('font-awesome-icon', FontAwesomeIcon)
   .component('csharp-icon', CSharpIcon)
   .component('blender-icon', BlenderIcon)
