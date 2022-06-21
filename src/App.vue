@@ -85,6 +85,12 @@
                         <vscode-icon class="transform hover:scale-125 transition-transform" :size="40"/>
                     </a>
                 </li>
+                <!--li class="tools-link p-10">
+                    SketchUp Logo!!!
+                    <a href="https://code.visualstudio.com/" class="hover:text-red" target="_blank" title="Visual Studio Code">
+                        <vscode-icon class="transform hover:scale-125 transition-transform" :size="40"/>
+                    </a>
+                </li-->
               </ul>
             </div>
           </div>
