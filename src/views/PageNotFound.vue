@@ -9,7 +9,12 @@
         </AppearTransition>
         <AppearTransition :duration="2000" :delay="1500">
           <h2 class="font-text text-lg sm:text-xl md:text-1xl lg:text-2xl xl:text-3xl">
-            There is nothing here.
+            There is nothing here.<br>
+          </h2>
+        </AppearTransition>
+        <AppearTransition :duration="2000" :delay="3000">
+          <h2 class="font-text text-lg sm:text-xl md:text-1xl lg:text-2xl xl:text-3xl">
+            <router-link class="font-semibold underline decoration-[0.2rem] hover:decoration-[0.3rem] focus:decoration-[0.3rem] decoration-myyellow" to="/">Here</router-link> is everything.
           </h2>
         </AppearTransition>
       </div>
