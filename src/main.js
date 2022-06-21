@@ -11,10 +11,11 @@ import CSharpIcon from 'vue-material-design-icons/LanguageCsharp.vue'
 import BlenderIcon from 'vue-material-design-icons/BlenderSoftware.vue'
 import FirebaseIcon from 'vue-material-design-icons/Firebase.vue'
 import VSCodeIcon from 'vue-material-design-icons/MicrosoftVisualStudioCode.vue'
+import router from './router'
 
 library.add(faPhone, faLinkedin, faVuejs, faCopyright, faHeart, faGithubSquare, faGit, faUnity, faPython, faInstagramSquare)
 
-createApp(App)
+createApp(App).use(router)
   .component('AppearTransition', AppearTransition)
   .component('font-awesome-icon', FontAwesomeIcon)
   .component('csharp-icon', CSharpIcon)
