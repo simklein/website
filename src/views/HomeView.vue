@@ -1,17 +1,29 @@
 <template>
   <div class="content px-10 md:px-28 py-20 max-w-screen-xl m-auto">
-    <section class="hero relative h-screen">
-      <div class="hero-text container h-full flex flex-col justify-center text-left text-dark selection:bg-myyellow">
-        <AppearTransition :translation="['-100px',0]" :duration="2000">
-          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-title mb-6">
-            Hi, I am Simon!
-          </h1>
-        </AppearTransition>
-        <AppearTransition :duration="2000" :delay="1500">
-          <h2 class="font-text text-lg sm:text-xl md:text-1xl lg:text-2xl xl:text-3xl">
-            I like audio, data and learning new things.
-          </h2>
-        </AppearTransition>
+    <section class="hero relative h-screen flex flex-col">
+      <div class="flex flex-grow flex-row">
+        <div class="hero-text container h-full flex flex-col justify-center text-left text-dark selection:bg-myyellow">
+          <AppearTransition :translation="['-100px',0]" :duration="2000">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-title mb-6">
+              Hi, I am Simon!
+            </h1>
+          </AppearTransition>
+          <AppearTransition :duration="2000" :delay="1500">
+            <h2 class="font-text text-lg sm:text-xl md:text-1xl lg:text-2xl xl:text-3xl">
+              I like audio, data and learning new things.
+            </h2>
+          </AppearTransition>
+        </div>
+        <div class="hero-pic container h-full flex flex-col justify-center w-1/3 selection:bg-myyellow">
+          <AppearTransition :duration="2000" :delay="2500">
+            <div class="container">
+              <img class="rounded-full border-4 border-dark transition-transform transform hover:scale-105" src="@/assets/portrait.jpg" alt="me">
+            </div>
+          </AppearTransition>
+        </div>
+      </div>
+      <div class="bottom-0 flex justify-center pb-24">
+        <font-awesome-icon class="bg-light text-red animate-bounce h-10 w-10" :icon="['fas', 'angle-down']"/>
       </div>
     </section>
     <section class="about md:pr-28 text-dark font-text text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl text-justify selection:bg-myyellow">
@@ -40,7 +52,7 @@
       <br>
       <div class="text-center w-8/12 m-auto">
         <p>Here are some tools I enjoy using:</p>
-        <div class="aspect-square">
+        <div class="aspect-square" >
           <ul class="grid grid-cols-3 items-center flex-1 justify-center">
             <li class="tools-link p-10">
               <a href="https://python.org" class="hover:text-red" target="_blank" title="Python">
@@ -109,6 +121,7 @@
 </template>
 
 <script>
+import AppearTransition from '@/components/AppearTransition.vue'
 // @ is an alias to /src
 export default {
   name: 'HomeView',
@@ -119,6 +132,7 @@ export default {
   },
   mounted () {
     this.$nextTick(this.show = true) // might need this.$nextTick
-  }
+  },
+  components: { AppearTransition }
 }
 </script>

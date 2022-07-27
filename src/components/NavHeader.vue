@@ -12,14 +12,14 @@
                     <li class="uppercase p-3">/</li>
                     <li class="uppercase p-3"><router-link class="link" :to="{name: ''}">Portfolio</router-link></li>
                     <li class="uppercase p-3">/</li-->
-                    <AppearTransition :duration="1000" :delay="2500">
+                    <AppearTransition :duration="1000" :delay="3000">
                         <li class="social-link p-3">
                             <a href="https://www.linkedin.com/in/simklein/" target="_blank" title="LinkedIn">
                                 <font-awesome-icon class="bg-light rounded-md h-10 w-10 hover:text-red transform hover:scale-110 transition-transform" :icon="['fab', 'linkedin']"/>
                             </a>
                         </li>
                     </AppearTransition>
-                    <AppearTransition :duration="1000" :delay="3000">
+                    <AppearTransition :duration="1000" :delay="3500">
                     <li class="social-link p-3">
                         <a href="https://github.com/simklein" target="_blank" title="Github">
                             <font-awesome-icon class="bg-light rounded-md h-10 w-10 hover:text-red transform hover:scale-110 transition-transform" :icon="['fab', 'github-square']"/>

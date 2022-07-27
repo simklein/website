@@ -14,7 +14,7 @@
 /* -----Colors-----*/
 .bg-light {
     --tw-bg-opacity: 1;
-    background-color: rgb(234 226 183 / var(--tw-bg-opacity));
+    background-color: rgb(255 222 173 / var(--tw-bg-opacity));
 }
 
 .bg-dark {
@@ -43,7 +43,7 @@
 
 .text-light {
     --tw-text-opacity: 1;
-    color: rgb(234 226 183 / var(--tw-text-opacity));
+    color: rgb(255 222 173 / var(--tw-text-opacity));
 }
 
 .text-dark {
