@@ -22,9 +22,11 @@
           </AppearTransition>
         </div>
       </div>
-      <div class="bottom-0 flex justify-center pb-24">
-        <font-awesome-icon class="bg-light text-red animate-bounce h-10 w-10" :icon="['fas', 'angle-down']"/>
-      </div>
+      <AppearTransition :duration="2000" :delay="3500">
+        <div class="bottom-0 flex justify-center pb-24">
+          <font-awesome-icon class="bg-light text-red animate-bounce h-10 w-10" :icon="['fas', 'angle-down']"/>
+        </div>
+      </AppearTransition>
     </section>
     <section class="about md:pr-28 text-dark font-text text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl text-justify selection:bg-myyellow">
       <p>I currently work as a System Engineer in the development of hearing aids at the
@@ -32,7 +34,7 @@
         href="https://www.kind.com/de-de/unternehmen/" target="_blank" title="KIND">KIND Group</a>, where I evaluate signal prossesing algorithms in the context of medical devices.
       </p>
       <br>
-      <p>Last year I also completed my master’s in Electrical Engineering, Information Technology, and Computer Engineering at RWTH Aachen. where I spent much of my time conducting
+      <p>Last year I also completed my master’s in Electrical Engineering, Information Technology, and Computer Engineering at RWTH Aachen University. where I spent much of my time conducting
         <a class="font-semibold underline decoration-[0.2rem] hover:decoration-[0.3rem] focus:decoration-[0.3rem] decoration-myyellow"
         href="https://www.akustik.rwth-aachen.de/" target="_blank" title="Institut für Hörtechnik und Akustik">research in acoustics</a>.
       </p>
@@ -50,10 +52,10 @@
       <br>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi consequuntur odit sed laborum ipsam est veniam ex asperiores, esse unde quae commodi ut dolor. Eum eaque vero maiores quam.</p>
       <br>
-      <div class="text-center w-8/12 m-auto">
+      <div class="text-center m-auto">
         <p>Here are some tools I enjoy using:</p>
         <div class="aspect-square" >
-          <ul class="grid grid-cols-3 items-center flex-1 justify-center">
+          <ul class="grid grid-cols-5 items-center flex-1 justify-center">
             <li class="tools-link p-10">
               <a href="https://python.org" class="hover:text-red" target="_blank" title="Python">
                   <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'python']"/>
@@ -94,6 +96,11 @@
                     <vscode-icon class="transform hover:scale-125 transition-transform" :size="40"/>
                 </a>
             </li>
+            <li class="tools-link p-10">
+                <a href="https://tailwindcss.com/" class="hover:text-red" target="_blank" title="Tailwind CSS">
+                    <tailwind-icon class="transform hover:scale-125 transition-transform" :size="40"/>
+                </a>
+            </li>
             <!--li class="tools-link p-10">
                 SketchUp Logo!!!
                 <a href="https://code.visualstudio.com/" class="hover:text-red" target="_blank" title="Visual Studio Code">
@@ -107,7 +114,7 @@
       <p>In my spare hours, I enjoy various kinds of sportive activities, travelling, dabbling in music production and photography, and constantly finding new things to learn!
       </p>
     </section>
-    <section class="contact items-center text-center text-dark text-2xl mt-40">
+    <section class="contact font-text items-center text-center selection:bg-myyellow text-dark text-2xl mt-40">
       <p>
         Feel free to contact me via
         <a class="font-semibold text-link decoration-myyellow"
@@ -115,7 +122,7 @@
         or by sending an email to
       </p>
       <br>
-      <p class="font-extrabold text-center">hello@simonklein.me</p>
+      <p class="font-extrabold font-title  text-center">hello@simonklein.me</p>
     </section>
   </div>
 </template>

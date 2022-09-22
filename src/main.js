@@ -11,15 +11,20 @@ import CSharpIcon from 'vue-material-design-icons/LanguageCsharp.vue'
 import BlenderIcon from 'vue-material-design-icons/BlenderSoftware.vue'
 import FirebaseIcon from 'vue-material-design-icons/Firebase.vue'
 import VSCodeIcon from 'vue-material-design-icons/MicrosoftVisualStudioCode.vue'
+import TailwindIcon from 'vue-material-design-icons/Tailwind.vue'
 import router from './router'
+import Vue3Marquee from 'vue3-marquee'
+import 'vue3-marquee/dist/style.css'
 
 library.add(faPhone, faLinkedin, faVuejs, faCopyright, faHeart, faGithubSquare, faGit, faUnity, faPython, faInstagramSquare, faAngleDown)
 
 createApp(App).use(router)
+  .use(Vue3Marquee)
   .component('AppearTransition', AppearTransition)
   .component('font-awesome-icon', FontAwesomeIcon)
   .component('csharp-icon', CSharpIcon)
   .component('blender-icon', BlenderIcon)
   .component('firebase-icon', FirebaseIcon)
   .component('vscode-icon', VSCodeIcon)
+  .component('tailwind-icon', TailwindIcon)
   .mount('#app')

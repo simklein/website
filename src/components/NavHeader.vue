@@ -42,7 +42,18 @@
                         <li><router-link class="link" :to="{name: ''}">Portfolio</router-link></li>
                     </ul>
                 </transition>
-        </nav>
-       </div>
+            </nav>
+        </div>
     </header>
 </template>
+
+<!--script>
+import { Vue3Marquee } from 'vue3-marquee'
+import 'vue3-marquee/dist/style.css'
+
+export default {
+  components: {
+    Vue3Marquee
+  }
+}
+</script-->
