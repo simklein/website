@@ -31,7 +31,7 @@
     <section class="about md:pr-28 text-dark font-text text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl text-justify selection:bg-myyellow">
       <p>I currently work as a System Engineer in the development of hearing aids at the
         <a class="font-semibold underline decoration-[0.2rem] hover:decoration-[0.3rem] focus:decoration-[0.3rem] decoration-myyellow"
-        href="https://www.kind.com/de-de/unternehmen/" target="_blank" title="KIND">KIND Group</a>, where I evaluate signal prossesing algorithms in the context of medical devices.
+        href="https://www.kind.com/de-de/unternehmen/" target="_blank" title="KIND">KIND Group</a>, where I evaluate signal processing algorithms in the context of medical devices.
       </p>
       <br>
       <p>Last year I also completed my master’s in Electrical Engineering, Information Technology, and Computer Engineering at RWTH Aachen University. where I spent much of my time conducting
@@ -53,7 +53,7 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi consequuntur odit sed laborum ipsam est veniam ex asperiores, esse unde quae commodi ut dolor. Eum eaque vero maiores quam.</p>
       <br>
       <div class="text-center m-auto">
-        <p>Here are some tools I enjoy using:</p>
+        <p>Here are some tools I have enjoyed using along the way:</p>
         <div class="aspect-square" >
           <ul class="grid grid-cols-5 items-center flex-1 justify-center">
             <li class="tools-link p-10">
@@ -116,7 +116,7 @@
     </section>
     <section class="contact font-text items-center text-center selection:bg-myyellow text-dark text-2xl mt-40">
       <p>
-        Feel free to contact me via
+        Feel free to get in touch via
         <a class="font-semibold text-link decoration-myyellow"
           href="https://www.linkedin.com/in/simklein/" target="_blank" title="LinkedIn">LinkedIn</a>
         or by sending an email to

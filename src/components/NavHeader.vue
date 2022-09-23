@@ -15,16 +15,23 @@
                     <AppearTransition :duration="1000" :delay="3000">
                         <li class="social-link p-3">
                             <a href="https://www.linkedin.com/in/simklein/" target="_blank" title="LinkedIn">
-                                <font-awesome-icon class="bg-light rounded-md h-10 w-10 hover:text-red transform hover:scale-110 transition-transform" :icon="['fab', 'linkedin']"/>
+                                <font-awesome-icon class="bg-light rounded-md border-8 border-light h-10 w-10 hover:text-red transform hover:scale-110 transition-transform" :icon="['fab', 'linkedin']"/>
                             </a>
                         </li>
                     </AppearTransition>
                     <AppearTransition :duration="1000" :delay="3500">
                     <li class="social-link p-3">
                         <a href="https://github.com/simklein" target="_blank" title="Github">
-                            <font-awesome-icon class="bg-light rounded-md h-10 w-10 hover:text-red transform hover:scale-110 transition-transform" :icon="['fab', 'github-square']"/>
+                            <font-awesome-icon class="bg-light rounded-md border-8 border-light h-10 w-10 hover:text-red transform hover:scale-110 transition-transform" :icon="['fab', 'github-square']"/>
                         </a>
                     </li>
+                    </AppearTransition>
+                    <AppearTransition :duration="1000" :delay="4000">
+                        <li class="social-link p-3">
+                            <a href="https://www.linkedin.com/in/simklein/" target="_blank" title="Download CV">
+                                <font-awesome-icon class="bg-light rounded-md border-8 border-light h-10 w-10 hover:text-red transform hover:scale-110 transition-transform" :icon="['fas', 'file-arrow-down']"/>
+                            </a>
+                        </li>
                     </AppearTransition>
                     <!--li class="social-link p-3">
                         <a href="https://github.com/simklein" target="_blank" title="Instagram">

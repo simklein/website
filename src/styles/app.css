@@ -74,6 +74,10 @@
     border-color: #003049;
 }
 
+.border-light {
+    border-color: #FFDEAD;
+}
+
 .border-red {
     border-color: #D62828;
 }
