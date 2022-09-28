@@ -17,7 +17,7 @@
         <div class="hero-pic container h-full flex flex-col justify-center w-1/3 selection:bg-myyellow">
           <AppearTransition :duration="2000" :delay="2500">
             <div class="container">
-              <img class="rounded-full border-4 border-dark transition-transform transform hover:scale-105" src="@/assets/portrait.jpg" alt="me">
+              <img class="rounded-full border-4 border-dark transition-transform transform hover:scale-105" src="@/assets/portrait.png" alt="me">
             </div>
           </AppearTransition>
         </div>
@@ -54,61 +54,61 @@
       <br>
       <div class="text-center m-auto">
         <p>Here are some tools I have enjoyed using along the way:</p>
-        <div class="aspect-square" >
-          <ul class="grid grid-cols-5 items-center flex-1 justify-center">
-            <li class="tools-link p-10">
-              <a href="https://python.org" class="hover:text-red" target="_blank" title="Python">
-                  <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'python']"/>
-              </a>
-            </li>
-            <li class="tools-link p-10">
-                <a href="https://git-scm.com/" class="hover:text-red" target="_blank" title="Git">
-                    <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'git']"/>
+          <div class="aspect-square" >
+            <ul class="grid grid-cols-5 items-center flex-1 justify-center">
+              <li class="tools-link p-10">
+                <a href="https://python.org" class="hover:text-red" target="_blank" title="Python">
+                    <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'python']"/>
                 </a>
-            </li>
-            <li class="tools-link p-10">
-              <a href="https://vuejs.org" class="hover:text-red" target="_blank" title="Vue.js">
-                  <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'vuejs']"/>
-              </a>
-            </li>
-            <li class="tools-link p-10">
-                <a href="https://unity.com/" class="hover:text-red" target="_blank" title="Unity">
-                    <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'unity']"/>
+              </li>
+              <li class="tools-link p-10">
+                  <a href="https://git-scm.com/" class="hover:text-red" target="_blank" title="Git">
+                      <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'git']"/>
+                  </a>
+              </li>
+              <li class="tools-link p-10">
+                <a href="https://vuejs.org" class="hover:text-red" target="_blank" title="Vue.js">
+                    <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'vuejs']"/>
                 </a>
-            </li>
-            <li class="tools-link p-10">
-                <a href="https://docs.microsoft.com/de-de/dotnet/csharp/" class="hover:text-red" target="_blank" title="C#">
-                  <csharp-icon class="transform hover:scale-125 transition-transform" :size="40"/>
-                </a>
-            </li>
-            <li class="tools-link p-10">
-                <a href="https://www.blender.org/" class="hover:text-red" target="_blank" title="Blender">
-                    <blender-icon class="transform hover:scale-125 transition-transform" :size="40"/>
-                </a>
-            </li>
-            <li class="tools-link p-10">
-                <a href="https://firebase.google.com/" class="hover:text-red" target="_blank" title="Firebase">
-                    <firebase-icon class="transform hover:scale-125 transition-transform" :size="40"/>
-                </a>
-            </li>
-            <li class="tools-link p-10">
-                <a href="https://code.visualstudio.com/" class="hover:text-red" target="_blank" title="Visual Studio Code">
-                    <vscode-icon class="transform hover:scale-125 transition-transform" :size="40"/>
-                </a>
-            </li>
-            <li class="tools-link p-10">
-                <a href="https://tailwindcss.com/" class="hover:text-red" target="_blank" title="Tailwind CSS">
-                    <tailwind-icon class="transform hover:scale-125 transition-transform" :size="40"/>
-                </a>
-            </li>
-            <!--li class="tools-link p-10">
-                SketchUp Logo!!!
-                <a href="https://code.visualstudio.com/" class="hover:text-red" target="_blank" title="Visual Studio Code">
-                    <vscode-icon class="transform hover:scale-125 transition-transform" :size="40"/>
-                </a>
-            </li-->
-          </ul>
-        </div>
+              </li>
+              <li class="tools-link p-10">
+                  <a href="https://unity.com/" class="hover:text-red" target="_blank" title="Unity">
+                      <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'unity']"/>
+                  </a>
+              </li>
+              <li class="tools-link p-10">
+                  <a href="https://docs.microsoft.com/de-de/dotnet/csharp/" class="hover:text-red" target="_blank" title="C#">
+                    <csharp-icon class="transform hover:scale-125 transition-transform" :size="40"/>
+                  </a>
+              </li>
+              <li class="tools-link p-10">
+                  <a href="https://www.blender.org/" class="hover:text-red" target="_blank" title="Blender">
+                      <blender-icon class="transform hover:scale-125 transition-transform" :size="40"/>
+                  </a>
+              </li>
+              <li class="tools-link p-10">
+                  <a href="https://firebase.google.com/" class="hover:text-red" target="_blank" title="Firebase">
+                      <firebase-icon class="transform hover:scale-125 transition-transform" :size="40"/>
+                  </a>
+              </li>
+              <li class="tools-link p-10">
+                  <a href="https://code.visualstudio.com/" class="hover:text-red" target="_blank" title="Visual Studio Code">
+                      <vscode-icon class="transform hover:scale-125 transition-transform" :size="40"/>
+                  </a>
+              </li>
+              <li class="tools-link p-10">
+                  <a href="https://tailwindcss.com/" class="hover:text-red" target="_blank" title="Tailwind CSS">
+                      <tailwind-icon class="transform hover:scale-125 transition-transform" :size="40"/>
+                  </a>
+              </li>
+              <!--li class="tools-link p-10">
+                  SketchUp Logo!!!
+                  <a href="https://code.visualstudio.com/" class="hover:text-red" target="_blank" title="Visual Studio Code">
+                      <vscode-icon class="transform hover:scale-125 transition-transform" :size="40"/>
+                  </a>
+              </li-->
+            </ul>
+          </div>
       </div>
       <br>
       <p>In my spare hours, I enjoy various kinds of sportive activities, travelling, dabbling in music production and photography, and constantly finding new things to learn!
@@ -129,6 +129,7 @@
 
 <script>
 import AppearTransition from '@/components/AppearTransition.vue'
+
 // @ is an alias to /src
 export default {
   name: 'HomeView',
