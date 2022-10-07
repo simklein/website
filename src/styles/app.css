@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '../assets/css/icon.css';
 
 /* -----Fonts----- */
 .font-title {
@@ -14,6 +15,16 @@
 /* -----Colors-----*/
 .bg-light {
     --tw-bg-opacity: 1;
+    background-color: rgb(255 222 173 / var(--tw-bg-opacity));
+}
+
+.bg-light-2 {
+    background-color: #FFD896;
+    /* background-color: #FFDBA1 */
+}
+
+.bg-light-trsp {
+    --tw-bg-opacity: 0.5;
     background-color: rgb(255 222 173 / var(--tw-bg-opacity));
 }
 
@@ -41,6 +52,11 @@
     background-color: rgb(252 191 73 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-light:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 222 173 / var(--tw-bg-opacity));
+}
+
 .text-light {
     --tw-text-opacity: 1;
     color: rgb(255 222 173 / var(--tw-text-opacity));
@@ -66,6 +82,11 @@
     color: rgb(214 40 40 / var(--tw-text-opacity));
 }
 
+.hover\:text-myyellow:hover {
+    --tw-text-opacity: 1;
+    color: rgb(252 191 73 / var(--tw-text-opacity));
+}
+
 .decoration-myyellow {
     text-decoration-color: #FCBF49;
 }
@@ -78,8 +99,17 @@
     border-color: #FFDEAD;
 }
 
+.border-light-2 {
+    /* border-color: #FFD896;  */
+    border-color: #FFDBA1;
+}
+
 .border-red {
     border-color: #D62828;
+}
+
+.border-yellow {
+    border-color: #FCBF49;
 }
 
 .text-link {
@@ -99,10 +129,28 @@
     background-repeat: repeat-x;
     background-position: center;
     background-size: contain;
+    z-index: -99;
     /*background-size: auto 100%;*/
   }
 
 .material-design-icon {
     display: inline-flex;
     align-self: center;
+  }
+
+.nav-icon {
+    position: relative;
+    opacity:1;
+    /*-webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;*/
+  }
+
+  .router-link-active {
+    background-color: #FCBF49;
+    color: #FCBF49;
+    font-weight: 900;
   }

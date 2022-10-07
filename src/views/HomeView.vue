@@ -28,13 +28,13 @@
         </div>
       </AppearTransition>
     </section>
-    <section class="about md:pr-28 text-dark font-text text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl text-justify selection:bg-myyellow">
+    <section class="about text-dark font-text text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl text-justify selection:bg-myyellow pb-20">
       <p>I currently work as a System Engineer in the development of hearing aids at the
         <a class="font-semibold underline decoration-[0.2rem] hover:decoration-[0.3rem] focus:decoration-[0.3rem] decoration-myyellow"
         href="https://www.kind.com/de-de/unternehmen/" target="_blank" title="KIND">KIND Group</a>, where I evaluate signal processing algorithms in the context of medical devices.
       </p>
       <br>
-      <p>Last year I also completed my master’s in Electrical Engineering, Information Technology, and Computer Engineering at RWTH Aachen University. where I spent much of my time conducting
+      <p>Last year I also completed my master’s in Electrical Engineering, Information Technology, and Computer Engineering at RWTH Aachen University, where I spent much of my time conducting
         <a class="font-semibold underline decoration-[0.2rem] hover:decoration-[0.3rem] focus:decoration-[0.3rem] decoration-myyellow"
         href="https://www.akustik.rwth-aachen.de/" target="_blank" title="Institut für Hörtechnik und Akustik">research in acoustics</a>.
       </p>
@@ -50,89 +50,128 @@
       <br>
       <p>Recently I find myself interested in ... <span class="italic">(Wo will ich hin?)</span></p>
       <br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi consequuntur odit sed laborum ipsam est veniam ex asperiores, esse unde quae commodi ut dolor. Eum eaque vero maiores quam.</p>
-      <br>
-      <div class="text-center m-auto">
-        <p>Here are some tools I have enjoyed using along the way:</p>
-          <div class="aspect-square" >
-            <ul class="grid grid-cols-5 items-center flex-1 justify-center">
-              <li class="tools-link p-10">
-                <a href="https://python.org" class="hover:text-red" target="_blank" title="Python">
-                    <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'python']"/>
-                </a>
-              </li>
-              <li class="tools-link p-10">
-                  <a href="https://git-scm.com/" class="hover:text-red" target="_blank" title="Git">
-                      <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'git']"/>
-                  </a>
-              </li>
-              <li class="tools-link p-10">
-                <a href="https://vuejs.org" class="hover:text-red" target="_blank" title="Vue.js">
-                    <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'vuejs']"/>
-                </a>
-              </li>
-              <li class="tools-link p-10">
-                  <a href="https://unity.com/" class="hover:text-red" target="_blank" title="Unity">
-                      <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'unity']"/>
-                  </a>
-              </li>
-              <li class="tools-link p-10">
-                  <a href="https://docs.microsoft.com/de-de/dotnet/csharp/" class="hover:text-red" target="_blank" title="C#">
-                    <csharp-icon class="transform hover:scale-125 transition-transform" :size="40"/>
-                  </a>
-              </li>
-              <li class="tools-link p-10">
-                  <a href="https://www.blender.org/" class="hover:text-red" target="_blank" title="Blender">
-                      <blender-icon class="transform hover:scale-125 transition-transform" :size="40"/>
-                  </a>
-              </li>
-              <li class="tools-link p-10">
-                  <a href="https://firebase.google.com/" class="hover:text-red" target="_blank" title="Firebase">
-                      <firebase-icon class="transform hover:scale-125 transition-transform" :size="40"/>
-                  </a>
-              </li>
-              <li class="tools-link p-10">
-                  <a href="https://code.visualstudio.com/" class="hover:text-red" target="_blank" title="Visual Studio Code">
-                      <vscode-icon class="transform hover:scale-125 transition-transform" :size="40"/>
-                  </a>
-              </li>
-              <li class="tools-link p-10">
-                  <a href="https://tailwindcss.com/" class="hover:text-red" target="_blank" title="Tailwind CSS">
-                      <tailwind-icon class="transform hover:scale-125 transition-transform" :size="40"/>
-                  </a>
-              </li>
-              <!--li class="tools-link p-10">
-                  SketchUp Logo!!!
-                  <a href="https://code.visualstudio.com/" class="hover:text-red" target="_blank" title="Visual Studio Code">
-                      <vscode-icon class="transform hover:scale-125 transition-transform" :size="40"/>
-                  </a>
-              </li-->
-            </ul>
-          </div>
-      </div>
-      <br>
-      <p>In my spare hours, I enjoy various kinds of sportive activities, travelling, dabbling in music production and photography, and constantly finding new things to learn!
+      <p>In my spare hours, I enjoy various kinds of sportive activities, travelling, dabbling in music production and photography, and constantly finding new things to get excited about!
       </p>
+      <br>
     </section>
-    <section class="contact font-text items-center text-center selection:bg-myyellow text-dark text-2xl mt-40">
-      <p>
-        Feel free to get in touch via
-        <a class="font-semibold text-link decoration-myyellow"
-          href="https://www.linkedin.com/in/simklein/" target="_blank" title="LinkedIn">LinkedIn</a>
-        or by sending an email to
-      </p>
-      <br>
-      <p class="font-extrabold font-title  text-center">hello@simonklein.me</p>
+    <section class="skills pb-40">
+      <div class="text-center text-3xl font-title font-semibold m-auto">
+        <p>Here are some tools I have enjoyed using along the way:</p>
+        <div class="m-6 bg-light rounded-xl border-4 border-light-2">
+          <MarqueeText
+            :duration="40"
+            :paused="isMarqueePaused"
+            @mouseenter="isMarqueePaused = !isMarqueePaused"
+            @mouseleave="isMarqueePaused = false"
+          >
+            <div class="flex flex-row py-0 px-0 m-auto">
+              <ul class="flex items-center flex-1">
+                <li class="tools-link p-10">
+                  <a href="https://python.org" class="hover:text-red" target="_blank" title="Python">
+                      <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'python']"/>
+                  </a>
+                </li>
+                <li class="tools-link p-10">
+                    <a href="https://git-scm.com/" class="hover:text-red" target="_blank" title="Git">
+                        <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'git']"/>
+                    </a>
+                </li>
+                <li class="tools-link p-10">
+                  <a href="https://vuejs.org" class="hover:text-red" target="_blank" title="Vue.js">
+                      <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'vuejs']"/>
+                  </a>
+                </li>
+                <li class="tools-link p-10">
+                    <a href="https://unity.com/" class="hover:text-red" target="_blank" title="Unity">
+                        <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'unity']"/>
+                    </a>
+                </li>
+                <li class="tools-link p-10">
+                    <a href="https://docs.microsoft.com/de-de/dotnet/csharp/" class="hover:text-red" target="_blank" title="C#">
+                      <csharp-icon class="transform hover:scale-125 transition-transform" :size="40"/>
+                    </a>
+                </li>
+                <li class="tools-link p-10">
+                    <a href="https://www.blender.org/" class="hover:text-red" target="_blank" title="Blender">
+                        <blender-icon class="transform hover:scale-125 transition-transform" :size="40"/>
+                    </a>
+                </li>
+                <li class="tools-link p-10">
+                    <a href="https://firebase.google.com/" class="hover:text-red" target="_blank" title="Firebase">
+                        <firebase-icon class="transform hover:scale-125 transition-transform" :size="40"/>
+                    </a>
+                </li>
+                <li class="tools-link p-10">
+                    <a href="https://code.visualstudio.com/" class="hover:text-red" target="_blank" title="Visual Studio Code">
+                        <vscode-icon class="transform hover:scale-125 transition-transform" :size="40"/>
+                    </a>
+                </li>
+                <li class="tools-link p-10">
+                    <a href="https://tailwindcss.com/" class="hover:text-red" target="_blank" title="Tailwind CSS">
+                        <tailwind-icon class="transform hover:scale-125 transition-transform" :size="40"/>
+                    </a>
+                </li>
+                <li class="tools-link p-10">
+                  <a href="https://www.notion.so/product" class="hover:text-red" target="_blank" title="Notion">
+                    <i class="icon icon-notion bg-light rounded-md transform hover:scale-125 transition-transform" style="font-size: 40px;"></i>
+                  </a>
+                </li>
+                <li class="tools-link p-10">
+                  <a href="https://www.latex-project.org/" class="hover:text-red" target="_blank" title="LaTeX">
+                    <i class="icon icon-latex bg-light rounded-md transform hover:scale-125 transition-transform" style="font-size: 40px;"></i>
+                  </a>
+                  </li>
+                <li class="tools-link p-10">
+                  <a href="https://de.mathworks.com/products/matlab.html/" class="hover:text-red" target="_blank" title="Matlab">
+                    <i class="icon icon-mathworks bg-light rounded-md transform hover:scale-125 transition-transform" style="font-size: 40px;"></i>
+                  </a>
+                </li>
+                <li class="tools-link p-10">
+                  <a href="https://www.tableau.com/" class="hover:text-red" target="_blank" title="Tableau">
+                    <i class="icon icon-tableau bg-light rounded-md transform hover:scale-125 transition-transform" style="font-size: 40px;"></i>
+                  </a>
+                </li>
+                <!--li class="tools-link p-10">
+                    SketchUp Logo!!!
+                    <a href="https://code.visualstudio.com/" class="hover:text-red" target="_blank" title="Visual Studio Code">
+                        <vscode-icon class="transform hover:scale-125 transition-transform" :size="40"/>
+                    </a>
+                </li-->
+              </ul>
+            </div>
+          </MarqueeText>
+        </div>
+      </div>
+    </section>
+    <section class="contact font-text items-center text-center selection:bg-myyellow text-dark text-2xl pb-40">
+      <p class="text-center text-3xl font-title">Get in touch:</p>
+        <div class="m-6">
+          <p>
+            Feel free to get in touch via
+            <a class="font-semibold text-link decoration-myyellow"
+              href="https://www.linkedin.com/in/simklein/" target="_blank" title="LinkedIn">LinkedIn</a>
+            or by sending an email to
+          </p>
+          <br>
+          <p class="font-extrabold text-center">hello@simonklein.me</p>
+        </div>
     </section>
   </div>
 </template>
 
 <script>
 import AppearTransition from '@/components/AppearTransition.vue'
+import MarqueeText from 'vue-marquee-text-component'
+import { ref } from '@vue/reactivity'
 
 // @ is an alias to /src
 export default {
   name: 'HomeView',
+  setup () {
+    return {
+      isMarqueePaused: ref(false)
+    }
+  },
   data () {
     return {
       show: false
@@ -141,6 +180,6 @@ export default {
   mounted () {
     this.$nextTick(this.show = true) // might need this.$nextTick
   },
-  components: { AppearTransition }
+  components: { AppearTransition, MarqueeText }
 }
 </script>
