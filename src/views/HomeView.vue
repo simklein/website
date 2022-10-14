@@ -1,6 +1,6 @@
 <template>
-  <div class="content px-10 md:px-28 py-20 max-w-screen-xl m-auto">
-    <section class="hero relative h-screen flex flex-col">
+  <div class="content px-20 md:px-28 py-20 max-w-screen-xl m-auto">
+    <section v-show="!mobile" class="hero relative h-screen flex flex-col">
       <div class="flex flex-grow flex-row">
         <div class="hero-text container h-full flex flex-col justify-center text-left text-dark selection:bg-myyellow">
           <AppearTransition :translation="['-100px',0]" :duration="2000">
@@ -16,9 +16,39 @@
         </div>
         <div class="hero-pic container h-full flex flex-col justify-center w-1/3 selection:bg-myyellow">
           <AppearTransition :duration="2000" :delay="2500">
-            <div class="container">
+            <div class="container" @mouseenter="debug" @mouseleave="debug">
               <img class="rounded-full border-4 border-dark transition-transform transform hover:scale-105" src="@/assets/portrait.png" alt="me">
             </div>
+          </AppearTransition>
+        </div>
+      </div>
+      <AppearTransition :duration="2000" :delay="3500">
+        <div class="bottom-0 flex justify-center pb-24">
+          <font-awesome-icon class="bg-light text-red animate-bounce h-10 w-10" :icon="['fas', 'angle-down']"/>
+        </div>
+      </AppearTransition>
+    </section>
+    <section v-show="mobile" class="hero-mobile relative h-screen flex flex-col">
+      <div class="flex flex-grow flex-col">
+        <div class="hero-pic container w-full flex flex-row justify-center h-1/2 selection:bg-myyellow">
+          <div class="flex w-4/6 flex-col place-content-end">
+            <div class="w-full aspect-square flex">
+              <AppearTransition :duration="2000">
+                  <img class="mb-6 rounded-full relative border-2 border-dark transition-transform transform hover:scale-105" src="@/assets/portrait.png" alt="me">
+              </AppearTransition>
+            </div>
+          </div>
+        </div>
+        <div class="hero-text container w-full flex flex-col justify-center text-center text-dark selection:bg-myyellow">
+          <AppearTransition :translation="[0, '100px']" :duration="2000" :delay="1500">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-title mb-6">
+              Hi, I am Simon!
+            </h1>
+          </AppearTransition>
+          <AppearTransition :duration="2000" :delay="2500">
+            <h2 class="font-text text-center text-lg sm:text-xl md:text-1xl lg:text-2xl xl:text-3xl">
+              I like audio, data and<br/>learning new things.
+            </h2>
           </AppearTransition>
         </div>
       </div>
@@ -54,15 +84,15 @@
       </p>
       <br>
     </section>
-    <section class="skills pb-40">
+    <section class="skills text-dark pb-40">
       <div class="text-center text-3xl font-title font-semibold m-auto">
         <p>Here are some tools I have enjoyed using along the way:</p>
         <div class="m-6 bg-light rounded-xl border-4 border-light-2">
           <MarqueeText
-            :duration="40"
+            :duration="45"
             :paused="isMarqueePaused"
-            @mouseenter="isMarqueePaused = !isMarqueePaused"
-            @mouseleave="isMarqueePaused = false"
+            @mouseenter="isMarqueePaused=!isMarqueePaused"
+            @mouseleave="isMarqueePaused=false"
           >
             <div class="flex flex-row py-0 px-0 m-auto">
               <ul class="flex items-center flex-1">
@@ -168,17 +198,25 @@ import { ref } from '@vue/reactivity'
 export default {
   name: 'HomeView',
   setup () {
+    let isMarqueePaused = ref(false)
     return {
-      isMarqueePaused: ref(false)
+      isMarqueePaused
     }
   },
   data () {
     return {
-      show: false
+      show: false,
+      mobile: true
     }
   },
   mounted () {
-    this.$nextTick(this.show = true) // might need this.$nextTick
+    // this.$nextTick(this.show = true) // might need this.$nextTick
+    this.show = true
+  },
+  methods: {
+    debug (event) {
+      console.log(event.type)
+    }
   },
   components: { AppearTransition, MarqueeText }
 }

@@ -55,10 +55,10 @@ export default {
   </Transition>
 </template>
 
-<style>
+<!--style>
 /*
   Necessary CSS...
   Note: avoid using <style scoped> here since it
   does not apply to slot content.
 */
-</style>
+</style-->

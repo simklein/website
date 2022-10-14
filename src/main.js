@@ -5,8 +5,8 @@ import './styles/app.css'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faLinkedin, faVuejs, faGithubSquare, faGit, faUnity, faPython, faInstagramSquare } from '@fortawesome/free-brands-svg-icons'
-import { faPhone, faAngleDown, faFileArrowDown, faSquare, faFile } from '@fortawesome/free-solid-svg-icons'
-import { faCopyright, faHeart } from '@fortawesome/free-regular-svg-icons'
+import { faPhone, faAngleDown, faSquare, faFile } from '@fortawesome/free-solid-svg-icons'
+import { faCopyright, faHeart, faFilePdf } from '@fortawesome/free-regular-svg-icons'
 import CSharpIcon from 'vue-material-design-icons/LanguageCsharp.vue'
 import BlenderIcon from 'vue-material-design-icons/BlenderSoftware.vue'
 import FirebaseIcon from 'vue-material-design-icons/Firebase.vue'
@@ -17,7 +17,7 @@ import Vue3Marquee from 'vue3-marquee' // obsolete
 import 'vue3-marquee/dist/style.css' // obsolete
 import MarqueeText from 'vue-marquee-text-component'
 
-library.add(faPhone, faLinkedin, faVuejs, faCopyright, faHeart, faGithubSquare, faGit, faUnity, faPython, faInstagramSquare, faAngleDown, faFileArrowDown, faSquare, faFile)
+library.add(faPhone, faLinkedin, faVuejs, faCopyright, faHeart, faGithubSquare, faGit, faUnity, faPython, faInstagramSquare, faAngleDown, faSquare, faFile, faFilePdf)
 
 createApp(App).use(router)
   .use(Vue3Marquee) // obsolete
