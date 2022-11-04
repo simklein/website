@@ -72,6 +72,11 @@
     color: rgb(247 127 0 / var(--tw-text-opacity));
 }
 
+.text-yellow {
+    --tw-text-opacity: 1;
+    color: rgb(252 191 73 / var(--tw-text-opacity));
+}
+
 .text-red {
     --tw-text-opacity: 1;
     color: rgb(214 40 40 / var(--tw-text-opacity));
@@ -128,9 +133,9 @@
     background-image: url(@/assets/wave2_r.svg);
     background-repeat: repeat-x;
     background-position: center;
-    background-size: contain;
+    /*background-size: contain;*/
     z-index: -99;
-    /*background-size: auto 100%;*/
+    background-size: auto 100%;
   }
 
 .material-design-icon {
@@ -153,4 +158,8 @@
     background-color: #FCBF49;
     color: #FCBF49;
     font-weight: 900;
+  }
+
+  .icon-active {
+    transform: rotate(180);
   }

@@ -1,5 +1,5 @@
 <template>
-  <div class="content px-20 md:px-28 py-20 max-w-screen-xl m-auto">
+  <div class="content px-16 md:px-28 py-20 max-w-screen-xl m-auto">
     <section v-show="!mobile" class="hero relative h-screen flex flex-col">
       <div class="flex flex-grow flex-row">
         <div class="hero-text container h-full flex flex-col justify-center text-left text-dark selection:bg-myyellow">
@@ -84,81 +84,86 @@
       </p>
       <br>
     </section>
-    <section class="skills text-dark pb-40">
-      <div class="text-center text-3xl font-title font-semibold m-auto">
+    <section class="skills text-dark pb-40 selection:bg-myyellow">
+      <div class="text-center text-xl sm:text-2xl md:text-3xl font-title font-semibold m-auto">
         <p>Here are some tools I have enjoyed using along the way:</p>
-        <div class="m-6 bg-light rounded-xl border-4 border-light-2">
+        <div class="my-6 md:m-6 bg-light border-y-4 border-light-2">
           <MarqueeText
-            :duration="45"
+            :duration="60"
             :paused="isMarqueePaused"
             @mouseenter="isMarqueePaused=!isMarqueePaused"
             @mouseleave="isMarqueePaused=false"
           >
             <div class="flex flex-row py-0 px-0 m-auto">
               <ul class="flex items-center flex-1">
-                <li class="tools-link p-10">
+                <li class="tools-link p-5 md:p-10">
                   <a href="https://python.org" class="hover:text-red" target="_blank" title="Python">
-                      <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'python']"/>
+                      <font-awesome-icon class="bg-light rounded-md h-5 w-5 md:h-10 md:w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'python']"/>
                   </a>
                 </li>
-                <li class="tools-link p-10">
+                <li class="tools-link p-5 md:p-10">
+                  <a href="https://de.mathworks.com/products/matlab.html/" class="hover:text-red" target="_blank" title="Matlab">
+                    <i class="icon icon-mathworks bg-light rounded-md h-5 w-5 md:h-10 md:w-10 transform hover:scale-125 transition-transform"></i>
+                  </a>
+                </li>
+                <li class="tools-link p-5 md:p-10">
+                    <a href="https://code.visualstudio.com/" class="hover:text-red" target="_blank" title="Visual Studio Code">
+                        <vscode-icon class="transform hover:scale-125 transition-transform" :size="this.size"/>
+                    </a>
+                </li>
+                <li class="tools-link p-5 md:p-10">
                     <a href="https://git-scm.com/" class="hover:text-red" target="_blank" title="Git">
-                        <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'git']"/>
+                        <font-awesome-icon class="bg-light rounded-md h-5 w-5 md:h-10 md:w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'git']"/>
                     </a>
                 </li>
-                <li class="tools-link p-10">
+                <li class="tools-link p-5 md:p-10">
                   <a href="https://vuejs.org" class="hover:text-red" target="_blank" title="Vue.js">
-                      <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'vuejs']"/>
+                      <font-awesome-icon class="bg-light rounded-md h-5 w-5 md:h-10 md:w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'vuejs']"/>
                   </a>
                 </li>
-                <li class="tools-link p-10">
+                <li class="tools-link p-5 md:p-10">
+                    <a href="https://tailwindcss.com/" class="hover:text-red" target="_blank" title="Tailwind CSS">
+                        <tailwind-icon class="transform hover:scale-125 transition-transform" :size="this.size"/>
+                    </a>
+                </li>
+                <li class="tools-link p-5 md:p-10">
                     <a href="https://unity.com/" class="hover:text-red" target="_blank" title="Unity">
-                        <font-awesome-icon class="bg-light rounded-md h-10 w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'unity']"/>
+                        <font-awesome-icon class="bg-light rounded-md h-5 w-5 md:h-10 md:w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'unity']"/>
                     </a>
                 </li>
-                <li class="tools-link p-10">
+                <li class="tools-link p-5 md:p-10">
                     <a href="https://docs.microsoft.com/de-de/dotnet/csharp/" class="hover:text-red" target="_blank" title="C#">
-                      <csharp-icon class="transform hover:scale-125 transition-transform" :size="40"/>
+                      <csharp-icon class="transform hover:scale-125 transition-transform" :size="this.size"/>
                     </a>
                 </li>
-                <li class="tools-link p-10">
+                <!--li class="tools-link p-10">
                     <a href="https://www.blender.org/" class="hover:text-red" target="_blank" title="Blender">
                         <blender-icon class="transform hover:scale-125 transition-transform" :size="40"/>
                     </a>
-                </li>
-                <li class="tools-link p-10">
+                </li-->
+                <!--li class="tools-link p-10">
                     <a href="https://firebase.google.com/" class="hover:text-red" target="_blank" title="Firebase">
                         <firebase-icon class="transform hover:scale-125 transition-transform" :size="40"/>
                     </a>
-                </li>
-                <li class="tools-link p-10">
-                    <a href="https://code.visualstudio.com/" class="hover:text-red" target="_blank" title="Visual Studio Code">
-                        <vscode-icon class="transform hover:scale-125 transition-transform" :size="40"/>
-                    </a>
-                </li>
-                <li class="tools-link p-10">
-                    <a href="https://tailwindcss.com/" class="hover:text-red" target="_blank" title="Tailwind CSS">
-                        <tailwind-icon class="transform hover:scale-125 transition-transform" :size="40"/>
-                    </a>
-                </li>
-                <li class="tools-link p-10">
+                </li-->
+                <li class="tools-link p-5 md:p-10">
                   <a href="https://www.notion.so/product" class="hover:text-red" target="_blank" title="Notion">
-                    <i class="icon icon-notion bg-light rounded-md transform hover:scale-125 transition-transform" style="font-size: 40px;"></i>
+                    <i class="icon icon-notion bg-light rounded-md h-5 w-5 md:h-10 md:w-10 transform hover:scale-125 transition-transform"></i>
                   </a>
                 </li>
-                <li class="tools-link p-10">
+                <li class="tools-link p-5 md:p-10">
                   <a href="https://www.latex-project.org/" class="hover:text-red" target="_blank" title="LaTeX">
-                    <i class="icon icon-latex bg-light rounded-md transform hover:scale-125 transition-transform" style="font-size: 40px;"></i>
-                  </a>
-                  </li>
-                <li class="tools-link p-10">
-                  <a href="https://de.mathworks.com/products/matlab.html/" class="hover:text-red" target="_blank" title="Matlab">
-                    <i class="icon icon-mathworks bg-light rounded-md transform hover:scale-125 transition-transform" style="font-size: 40px;"></i>
+                    <i class="icon icon-latex bg-light rounded-md h-5 w-5 md:h-10 md:w-10 transform hover:scale-125 transition-transform"></i>
                   </a>
                 </li>
-                <li class="tools-link p-10">
+                <li class="tools-link p-5 md:p-10">
+                    <a href="https://www.r-project.org/" class="hover:text-red" target="_blank" title="R">
+                        <font-awesome-icon class="bg-light rounded-md h-5 w-5 md:h-10 md:w-10 transform hover:scale-125 transition-transform" :icon="['fab', 'r-project']"/>
+                    </a>
+                </li>
+                <li class="tools-link p-5 md:p-10">
                   <a href="https://www.tableau.com/" class="hover:text-red" target="_blank" title="Tableau">
-                    <i class="icon icon-tableau bg-light rounded-md transform hover:scale-125 transition-transform" style="font-size: 40px;"></i>
+                    <i class="icon icon-tableau bg-light rounded-md h-5 w-5 md:h-10 md:w-10 transform hover:scale-125 transition-transform"></i>
                   </a>
                 </li>
                 <!--li class="tools-link p-10">
@@ -173,18 +178,32 @@
         </div>
       </div>
     </section>
-    <section class="contact font-text items-center text-center selection:bg-myyellow text-dark text-2xl pb-40">
-      <p class="text-center text-3xl font-title">Get in touch:</p>
-        <div class="m-6">
-          <p>
-            Feel free to get in touch via
-            <a class="font-semibold text-link decoration-myyellow"
-              href="https://www.linkedin.com/in/simklein/" target="_blank" title="LinkedIn">LinkedIn</a>
-            or by sending an email to
-          </p>
-          <br>
-          <p class="font-extrabold text-center">hello@simonklein.me</p>
+    <section class="contact text-dark pb-20 selection:bg-myyellow">
+      <p class="text-center text-xl sm:text-2xl md:text-3xl font-title">Feel free to get in touch:</p>
+      <div class="my-6 flex flex-row w-full justify-center text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl">
+        <div class="flex flex-col">
+          <div class="flex flex-row justify-start pb-4">
+            <a class="flex hover:text-red place-items-center"
+              href="https://www.linkedin.com/in/simklein/" target="_blank" title="LinkedIn">
+              <font-awesome-icon class="text-red bg-light rounded-md h-6 w-6 pr-4" :icon="['fab', 'linkedin-in']"/>
+              <div class="h-full font-semibold">LinkedIn</div>
+            </a>
+          </div>
+          <div class="flex flex-row justify-start pb-4">
+            <span class="flex place-items-center">
+              <font-awesome-icon class="text-red bg-light rounded-md h-6 w-6 pr-4" :icon="['fas', 'envelope']"/>
+              <div class="h-full font-semibold">hello@simonklein.me</div>
+            </span>
+          </div>
+          <div class="flex flex-row justify-start">
+            <a class="flex hover:text-red place-items-center"
+              href="/dsp_logo.png" target="_blank" title="Download CV">
+              <font-awesome-icon class="text-red bg-light rounded-md h-6 w-6 pr-4" :icon="['far', 'file-pdf']"/>
+              <div class="h-full font-semibold">Download my CV</div>
+          </a>
+          </div>
         </div>
+      </div>
     </section>
   </div>
 </template>
@@ -206,7 +225,21 @@ export default {
   data () {
     return {
       show: false,
-      mobile: true
+      mobile: false,
+      windowWidth: null
+    }
+  },
+  created () {
+    window.addEventListener('resize', this.checkScreen)
+    this.checkScreen()
+  },
+  computed: {
+    size () {
+      switch (this.mobile) {
+        case true: return 20
+        case false: return 40
+      }
+      return 40
     }
   },
   mounted () {
@@ -216,6 +249,14 @@ export default {
   methods: {
     debug (event) {
       console.log(event.type)
+    },
+    checkScreen () {
+      this.windowWidth = window.innerWidth
+      if (this.windowWidth <= 750) {
+        this.mobile = true
+        return
+      }
+      this.mobile = false
     }
   },
   components: { AppearTransition, MarqueeText }
