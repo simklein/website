@@ -78,8 +78,8 @@
         href="https://cityscaper.de/" target="_blank" title="cityscaper">cityscaper</a> on their mission to improve urban planning with AR.
       </p>
       <br>
-      <p>Recently I find myself interested in ... <span class="italic">(Wo will ich hin?)</span></p>
-      <br>
+      <!--p>Recently I find myself interested in ... <span class="italic">(Wo will ich hin?)</span></p>
+      <br-->
       <p>In my spare hours, I enjoy various kinds of sportive activities, travelling, dabbling in music production and photography, and constantly finding new things to get excited about!
       </p>
       <br>
@@ -195,13 +195,13 @@
               <div class="h-full font-semibold">hello@simonklein.me</div>
             </span>
           </div>
-          <div class="flex flex-row justify-start">
+          <!--div class="flex flex-row justify-start">
             <a class="flex hover:text-red place-items-center"
               href="/dsp_logo.png" target="_blank" title="Download CV">
               <font-awesome-icon class="text-red bg-light rounded-md h-6 w-6 pr-4" :icon="['far', 'file-pdf']"/>
               <div class="h-full font-semibold">Download my CV</div>
           </a>
-          </div>
+          </div-->
         </div>
       </div>
     </section>
