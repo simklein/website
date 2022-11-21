@@ -1,5 +1,5 @@
 <template>
-    <header class="pt-10 w-full h-32 md:h-52 bg-light z-50 fixed">
+    <header class="pt-10 w-full h-32 md:h-1/6 max-h-52 bg-light z-50 fixed">
         <div class="bg-dsp h-full">
             <nav class="flex flex-row py-0 px-0 h-full w-11/12 m-auto text-dark">
                 <!--div class="logo p-3 font-extrabold font">
