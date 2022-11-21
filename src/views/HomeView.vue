@@ -10,7 +10,7 @@
           </AppearTransition>
           <AppearTransition :duration="2000" :delay="1500">
             <h2 class="font-text text-lg sm:text-xl md:text-1xl lg:text-2xl xl:text-3xl">
-              I like audio, data and learning new things.
+              I am an engineer with a passion for<br>audio and data science.
             </h2>
           </AppearTransition>
         </div>
@@ -47,7 +47,7 @@
           </AppearTransition>
           <AppearTransition :duration="2000" :delay="2500">
             <h2 class="font-text text-center text-lg sm:text-xl md:text-1xl lg:text-2xl xl:text-3xl">
-              I like audio, data and<br/>learning new things.
+              I am an engineer with a passion for audio and data science.
             </h2>
           </AppearTransition>
         </div>
@@ -87,7 +87,7 @@
     <section class="skills text-dark pb-40 selection:bg-myyellow">
       <div class="text-center text-xl sm:text-2xl md:text-3xl font-title font-semibold m-auto">
         <p>Here are some tools I have enjoyed using along the way:</p>
-        <div class="my-6 md:m-6 bg-light border-y-4 border-light-2">
+        <div class="my-6 md:m-6 bg-light border-4 border-light-2 rounded-md">
           <MarqueeText
             :duration="60"
             :paused="isMarqueePaused"
