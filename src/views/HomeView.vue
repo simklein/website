@@ -4,12 +4,12 @@
       <div class="flex flex-grow flex-row">
         <div class="hero-text container h-full flex flex-col justify-center text-left text-dark selection:bg-myyellow">
           <AppearTransition :translation="['-100px',0]" :duration="2000">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-title mb-6">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-title mb-6">
               Hi, I am Simon!
             </h1>
           </AppearTransition>
           <AppearTransition :duration="2000" :delay="1500">
-            <h2 class="font-text text-lg sm:text-xl md:text-1xl lg:text-2xl xl:text-3xl">
+            <h2 class="font-text text-lg sm:text-xl md:text-1xl xl:text-3xl 2xl">
               I am an engineer with a passion for<br>audio and data science.
             </h2>
           </AppearTransition>
@@ -41,12 +41,12 @@
         </div>
         <div class="hero-text container w-full flex flex-col justify-center text-center text-dark selection:bg-myyellow">
           <AppearTransition :translation="[0, '100px']" :duration="2000" :delay="1500">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-title mb-6">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-title mb-6">
               Hi, I am Simon!
             </h1>
           </AppearTransition>
           <AppearTransition :duration="2000" :delay="2500">
-            <h2 class="font-text text-center text-lg sm:text-xl md:text-1xl lg:text-2xl xl:text-3xl">
+            <h2 class="font-text text-center text-lg sm:text-xl md:text-1xl xl:text-3xl">
               I am an engineer with a passion for audio and data science.
             </h2>
           </AppearTransition>
@@ -58,7 +58,7 @@
         </div>
       </AppearTransition>
     </section>
-    <section class="about text-dark font-text text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl text-justify selection:bg-myyellow pb-20">
+    <section class="about text-dark font-text text-sm sm:text-md md:text-lg xl:text-2xl text-justify selection:bg-myyellow pb-20">
       <p>I currently work as a System Engineer in the development of hearing aids at the
         <a class="font-semibold underline decoration-[0.2rem] hover:decoration-[0.3rem] focus:decoration-[0.3rem] decoration-myyellow"
         href="https://www.kind.com/de-de/unternehmen/" target="_blank" title="KIND">KIND Group</a>, where I evaluate signal processing algorithms in the context of medical devices.
@@ -180,7 +180,7 @@
     </section>
     <section class="contact text-dark pb-20 selection:bg-myyellow">
       <p class="text-center text-xl sm:text-2xl md:text-3xl font-title">Feel free to get in touch:</p>
-      <div class="my-6 flex flex-row w-full justify-center text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl">
+      <div class="my-6 flex flex-row w-full justify-center text-sm sm:text-md md:text-lg xl:text-2xl">
         <div class="flex flex-col">
           <div class="flex flex-row justify-start pb-4">
             <a class="flex hover:text-red place-items-center"
