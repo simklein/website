@@ -75,7 +75,7 @@
         href="https://www.muellerbbm.de/" target="_blank" title="Müller-BBM">industrial noise control</a>
         and got a taste of that startup energy when I joined
         <a class="font-semibold underline decoration-[0.2rem] hover:decoration-[0.3rem] focus:decoration-[0.3rem] decoration-myyellow"
-        href="https://cityscaper.de/" target="_blank" title="cityscaper">cityscaper</a> on their mission to improve urban planning with AR.
+        href="https://projektentwicklung.cityscaper.de/" target="_blank" title="cityscaper">cityscaper</a> on their mission to improve urban planning with AR.
       </p>
       <br>
       <!--p>Recently I find myself interested in ... <span class="italic">(Wo will ich hin?)</span></p>
