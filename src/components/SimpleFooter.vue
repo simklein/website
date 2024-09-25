@@ -10,7 +10,7 @@
                 </p>
                 <p>
                     <font-awesome-icon :icon="['far', 'copyright']"/>
-                    Simon Klein 2023
+                    Simon Klein 2024
                 </p>
             </div>
         </div>
