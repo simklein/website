@@ -59,12 +59,17 @@
       </AppearTransition>
     </section>
     <section class="about text-dark font-text text-sm sm:text-md md:text-lg xl:text-2xl text-justify selection:bg-myyellow pb-20">
-      <p>I currently work as a System Engineer in the development of hearing aids at the
+      <p>I currently work at
+        <a class="font-semibold underline decoration-[0.2rem] hover:decoration-[0.3rem] focus:decoration-[0.3rem] decoration-myyellow"
+        href="https://db-engineering-consulting.com/" target="_blank" title="DB E&C">DB Engineering & Consulting</a> on telecommunication issues in railway infrastructure for projects in the Stuttgart area.
+      </p>
+      <br>
+      <p>Before my shift to the transport industry, I worked as a System Engineer in the development of hearing aids at the
         <a class="font-semibold underline decoration-[0.2rem] hover:decoration-[0.3rem] focus:decoration-[0.3rem] decoration-myyellow"
         href="https://www.kind.com/de-de/unternehmen/" target="_blank" title="KIND">KIND Group</a>, where I evaluate signal processing algorithms in the context of medical devices.
       </p>
       <br>
-      <p>A short time ago, I also completed my master’s in Electrical Engineering, Information Technology, and Computer Engineering at RWTH Aachen University, where I spent much of my time conducting
+      <p>I completed my master’s in Electrical Engineering, Information Technology, and Computer Engineering at RWTH Aachen University, where I spent much of my time conducting
         <a class="font-semibold underline decoration-[0.2rem] hover:decoration-[0.3rem] focus:decoration-[0.3rem] decoration-myyellow"
         href="https://www.akustik.rwth-aachen.de/" target="_blank" title="Institut für Hörtechnik und Akustik">research in acoustics</a>.
       </p>
